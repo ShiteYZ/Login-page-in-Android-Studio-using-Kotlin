@@ -1,0 +1,15 @@
+package yourcompany.co.tz
+
+import android.os.Bundle
+import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AppCompatActivity
+
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        // Add this enableEdgetoEdge if you want your layout to cover the whole screen
+        //enableEdgeToEdge()
+        setContentView(R.layout.activity_main)
+
+    }
+}
