@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/loginFragment"
+        android:orientation="vertical"
+        android:gravity="center"
+        tools:context=".LoginFragment">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="20dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="160dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/tanraillogonew" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Username"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_corner"
+                    android:padding="15dp"
+                    android:inputType="textEmailAddress"
+                    android:id="@+id/loginusername"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:layout_marginTop="18dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_corner"
+                    android:padding="15dp"
+                    android:inputType="textPassword"
+                    android:id="@+id/loginpassword"
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:text="Login"
+                    android:textSize="18sp"
+                    android:backgroundTint="@color/chorcolate"
+                    android:textColor="@color/white"
+                    android:id="@+id/loginbutton"
+                    />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/botontext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Copyright: Tanrail Investments Ltd "
+            android:textSize="16sp"
+            android:gravity="bottom"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+
+</layout>
